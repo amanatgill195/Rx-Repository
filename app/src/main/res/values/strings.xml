@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Rcu Project</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_image_full_screen">ImageFullScreen</string>
+</resources>

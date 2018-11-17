@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ImageFullScreen"
+    tools:showIn="@layout/activity_image_full_screen">
+
+    <Button
+        android:id="@+id/btClose"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_arrow_back_black_24dp" />
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:id="@+id/imageZoom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zoomage_animateOnReset="true"
+        app:zoomage_autoCenter="true"
+        app:zoomage_autoResetMode="UNDER"
+        app:zoomage_restrictBounds="true"
+        app:zoomage_translatable="true"
+        app:zoomage_zoomable="true" />
+</RelativeLayout>
